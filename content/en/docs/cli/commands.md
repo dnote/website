@@ -233,16 +233,6 @@ Display the installed Dnote version.
 dnote version
 ```
 
-### Upgrade
-
-Check if a new version of Dnote is available.
-
-```bash
-dnote upgrade
-```
-
-This command checks GitHub for the latest release. To upgrade, see the [installation guide](../installation/).
-
 ## Global Flags
 
 All commands support the following global flag:
