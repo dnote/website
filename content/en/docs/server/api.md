@@ -1,7 +1,7 @@
 ---
 title: API Reference
 description: Dnote Server API documentation
-weight: 4
+weight: 5
 ---
 
 The Dnote server provides a REST API (v3) for syncing notes and books.

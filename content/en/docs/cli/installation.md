@@ -4,9 +4,7 @@ description: Install Dnote CLI on your system
 weight: 1
 ---
 
-## Commands
-
-### Script
+## Script
 
 Automatically install platform-specific Dnote binary. Supports Linux, macOS, FreeBSD, and Windows:
 
@@ -14,21 +12,24 @@ Automatically install platform-specific Dnote binary. Supports Linux, macOS, Fre
 curl -s https://www.getdnote.com/install | sh
 ```
 
-### Homebrew (macOS)
+## Homebrew (macOS)
 
 ```bash
 brew install dnote
 ```
 
-### Manual Download
+## Manual Download
 
-Download from [GitHub Releases](https://github.com/dnote/cli/releases) for your platform:
+Download from [GitHub Releases](https://github.com/dnote/cli/releases) for your platform.
 
-**Windows:**
+Pre-built binaries are available for:
 
-Download the `.zip` file from the releases page and add to PATH.
+- **Linux**: amd64, arm64, armv7 (32-bit)
+- **macOS**: amd64 (Intel), arm64 (Apple Silicon)
+- **Windows**: amd64
+- **FreeBSD**: amd64
 
-### Build from Source
+## Build from Source
 
 Requires Go 1.21+:
 

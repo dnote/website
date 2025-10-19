@@ -1,5 +1,6 @@
 ---
-title: Commands
+title: CLI Commands
+linkTitle: Commands
 description: Complete reference for Dnote CLI commands
 weight: 2
 ---
@@ -231,16 +232,6 @@ Display the installed Dnote version.
 ```bash
 dnote version
 ```
-
-### Upgrade
-
-Check if a new version of Dnote is available.
-
-```bash
-dnote upgrade
-```
-
-This command checks GitHub for the latest release. To upgrade, see the [installation guide](../installation/).
 
 ## Global Flags
 

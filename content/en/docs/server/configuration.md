@@ -1,7 +1,8 @@
 ---
 title: Server Configuration
+linkTitle: Configuration
 description: Configure your Dnote server
-weight: 3
+weight: 4
 ---
 
 ## Options
@@ -25,7 +26,6 @@ environment:
   - DBPath=~/custom.db
   - DisableRegistration=false
   - LOG_LEVEL=debug
-  - WebURL=https://dnote.example.com
 ```
 
 ### Systemd
@@ -35,7 +35,6 @@ Environment="PORT=3001"
 Environment="DBPath=~/custom.db"
 Environment="DisableRegistration=false"
 Environment="LOG_LEVEL=debug"
-Environment="WebURL=https://dnote.example.com"
 ```
 
 ### Command Line
@@ -45,8 +44,7 @@ dnote-server start \
   --port=3001 \
   --dbPath=/var/lib/dnote/server.db \
   --disableRegistration=true \
-  --logLevel=debug \
-  --webUrl=https://dnote.example.com
+  --logLevel=debug
 ```
 
 ## Email (Optional)

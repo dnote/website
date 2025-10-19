@@ -206,6 +206,13 @@ curl http://localhost:3001
 sudo systemctl show dnote --property=Environment
 ```
 
+## Supported Platforms
+
+Pre-built binaries are available for the following platforms and architectures:
+
+- **Linux**: amd64, arm64, armv7 (ARM 32-bit), 386
+- **FreeBSD**: amd64
+
 ## Connecting CLI to Server
 
 Edit your Dnote CLI config at `$XDG_CONFIG_HOME/dnote/dnoterc` (typically `~/.config/dnote/dnoterc`):

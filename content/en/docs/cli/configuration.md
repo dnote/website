@@ -1,5 +1,6 @@
 ---
-title: Configuration
+title: CLI Configuration
+linkTitle: Configuration
 description: Configure your Dnote CLI
 weight: 3
 ---
@@ -18,7 +19,7 @@ You can customize these locations by setting the `XDG_CONFIG_HOME` and `XDG_DATA
 A config file looks like following:
 
 ```yaml
-editor: vim
+editor: vi
 apiEndpoint: http://localhost:3001/api
 enableUpgradeCheck: true
 ```
@@ -27,8 +28,8 @@ enableUpgradeCheck: true
 
 Text editor for interactive note editing.
 
-* **Default:** `vim`
-* **Examples:** `nano`, `emacs`, `code --wait`, `subl -w`
+* **Default:** `vi`
+* **Examples:** `vim`, `nano`, `emacs`, `code --wait`, `subl -w`
 
 ### apiEndpoint
 
