@@ -1,7 +1,8 @@
 ---
 title: Server Configuration
+linkTitle: Configuration
 description: Configure your Dnote server
-weight: 3
+weight: 4
 ---
 
 ## Options

@@ -1,5 +1,6 @@
 ---
-title: Commands
+title: CLI Commands
+linkTitle: Commands
 description: Complete reference for Dnote CLI commands
 weight: 2
 ---

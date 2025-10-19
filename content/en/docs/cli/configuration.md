@@ -1,5 +1,6 @@
 ---
-title: Configuration
+title: CLI Configuration
+linkTitle: Configuration
 description: Configure your Dnote CLI
 weight: 3
 ---
