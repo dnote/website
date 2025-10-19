@@ -46,6 +46,8 @@ See [configuration docs](../configuration/) for all options.
 
 ### Updating
 
+Pull the latest image and restart the container:
+
 ```bash
 docker compose pull
 docker compose up -d
@@ -54,6 +56,8 @@ docker compose up -d
 
 ## Docker run
 
+If you prefer to use `docker run` instead of Docker Compose:
+
 ```bash
 docker run -d \
   --name dnote \
@@ -61,6 +65,18 @@ docker run -d \
   -v ./dnote_data:/data \
   dnote/dnote:latest
 ```
+
+## Supported Platforms
+
+The Docker images support the following platforms and architectures:
+
+- **linux/amd64** (x86_64)
+- **linux/arm64** (ARM 64-bit)
+- **linux/arm/v7** (ARM 32-bit)
+- **linux/386** (x86 32-bit)
+
+Docker automatically selects the correct image for your platform.
+
 
 ## Data & Backups
 
