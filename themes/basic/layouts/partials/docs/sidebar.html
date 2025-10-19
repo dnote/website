@@ -1,0 +1,16 @@
+<aside class="docs-sidebar">
+  <nav class="docs-nav">
+    <ul class="docs-menu">
+      <li>
+        <a href="/docs" class="{{ if eq .Page.Kind "section" }}active{{ end }}">Quick Start</a>
+      </li>
+      {{ range .CurrentSection.Pages.ByWeight }}
+      <li>
+        <a href="{{ .Permalink }}" class="{{ if eq $.Page.Permalink .Permalink }}active{{ end }}">
+          {{ .Title }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</aside>

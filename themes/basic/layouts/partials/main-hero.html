@@ -1,0 +1,17 @@
+<section class="main-hero">
+  {{ with .Params.Title }}
+    <h1 class="intro">
+        {{ . }}
+    </h1>
+  {{ end }}
+
+  <p class="intro-support">
+    {{ .Params.Description }}
+  </p>
+
+  <div class="intro-actions">
+    <a href="https://github.com/dnote/dnote#installation" target="_blank" rel="noreferrer noopener" class="button button-first button-cta">
+      Download
+    </a>
+  </div>
+</section>

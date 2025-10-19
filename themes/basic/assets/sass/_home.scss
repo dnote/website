@@ -1,0 +1,237 @@
+@import "./responsive";
+@import "./vendor/rem";
+@import "./font";
+@import "./variables";
+
+/*main page*/
+.home {
+  position: relative;
+
+  .intro {
+    margin-bottom: 1.1em;
+    font-size: 2.9rem;
+    margin: 0;
+    color: $first;
+    font-weight: 700;
+    // font-weight: 400;
+    @include font-size("5x-large");
+    @include breakpoint(md) {
+      width: auto;
+    }
+  }
+
+  .intro-support {
+    @include font-size("x-large");
+    color: #41506b;
+    margin-top: rem(8px);
+    margin-bottom: 0;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(md) {
+      width: rem(520px);
+    }
+    @include breakpoint(lg) {
+      width: auto;
+    }
+  }
+
+  .button-cta ~ .button-cta {
+    margin-left: 0;
+    margin-top: rem(12px);
+
+    @include breakpoint(md) {
+      margin-left: rem(12px);
+      margin-top: 0;
+    }
+  }
+  .button-cta {
+    padding: rem(8px) rem(16px);
+    width: rem(300px);
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+      width: auto;
+      padding: rem(8px) rem(40px);
+    }
+  }
+
+  .intro-actions {
+    margin-top: rem(32px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+  }
+
+  .main-hero {
+    position: relative;
+    top: -58px;
+    margin-bottom: -58px;
+    text-align: center;
+    padding: rem(142px) rem(14px) rem(160px);
+    // background: linear-gradient(270deg, #f4f7ff 0%, #f4f5f8 100%);
+    background: #f7f8fa;
+
+    @include breakpoint(md) {
+      padding: rem(160px) rem(28px);
+    }
+
+    @include breakpoint(lg) {
+      padding: rem(192px) 0 rem(140px);
+    }
+  }
+
+  .section {
+    padding: rem(30px) 0;
+
+    &.section-dark {
+      // background: linear-gradient(270deg, #f4f7ff 0%, #f4f5f8 100%);
+      background: black;
+      color: white;
+    }
+
+    &.section-gray {
+      background: #f7f8fa;
+    }
+
+    &.section-center {
+      text-align: center;
+    }
+
+    @include breakpoint(md) {
+      padding: rem(60px) 0;
+    }
+  }
+  .section-text {
+    padding: 0 rem(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .section-heading {
+    @include font-size("3x-large");
+    line-height: 1.3em;
+  }
+  .section-subheading {
+    @include font-size("large");
+    max-width: rem(740px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(24px);
+  }
+  .section-support {
+    color: #41506b;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(24px);
+
+    font-size: inherit;
+
+    @include breakpoint(md) {
+      @include font-size("large");
+    }
+  }
+
+  .features {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: rem(40px);
+  }
+  .cli-feature {
+    padding: rem(20px) 0;
+
+    @include breakpoint(lg) {
+      padding: rem(40px) 0;
+    }
+  }
+  .cli-feature-heading {
+    @include font-size("x-large");
+    margin-bottom: 0;
+    // margin-left: rem(20px);
+    position: relative;
+    padding-left: 30px;
+
+    &:before {
+      position: absolute;
+      background: url("/img/check-square.svg") no-repeat;
+      content: "";
+      height: 19px;
+      left: 0;
+      width: 18px;
+      margin-top: 4px;
+
+      @include breakpoint(md) {
+        margin-top: 9px;
+      }
+    }
+  }
+  .cli-feature-desc {
+    margin: 0;
+    color: #41506b;
+  }
+
+  .section-leading-img {
+    margin-bottom: rem(20px);
+    width: 100%;
+
+    @include breakpoint(md) {
+      width: auto;
+    }
+  }
+
+  .section-cta {
+    margin-top: rem(12px);
+    display: inline-block;
+  }
+
+
+  #feature-section {
+    .section-support {
+      max-width: rem(740px);
+    }
+  }
+  #cloud-section {
+    .section-support {
+      max-width: rem(720px);
+    }
+
+    .cloud-features {
+      margin-top: rem(40px);
+    }
+    .feature-heading {
+      margin-top: rem(12px);
+    }
+  }
+  #oss-section {
+    .section-support {
+      @include breakpoint(md) {
+        max-width: rem(680px);
+      }
+    }
+    .section-img {
+      margin-top: rem(60px);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+
+      @include breakpoint(md) {
+        width: 452px;
+      }
+    }
+    .cta-container {
+      margin-top: rem(60px);
+    }
+  }
+
+}

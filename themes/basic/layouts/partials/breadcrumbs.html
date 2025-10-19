@@ -1,0 +1,20 @@
+<nav aria-label="breadcrumb" class="breadcrumbs">
+  <ol>
+    {{ $ancestors := .Ancestors.Reverse }}
+    {{ range $i, $p := $ancestors }}
+      {{ if ne $p.RelPermalink "/" }}
+      <li>
+        <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+        <span class="separator">›</span>
+      </li>
+      {{ end }}
+    {{ end }}
+    <li class="current">
+      {{ if eq $.RelPermalink "/docs/" }}
+        <a href="{{ $.RelPermalink }}">{{ $.Title }}</a>
+      {{ else }}
+        {{ $.Title }}
+      {{ end }}
+    </li>
+  </ol>
+</nav>

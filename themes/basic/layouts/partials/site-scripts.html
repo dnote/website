@@ -1,0 +1,2 @@
+{{ $scripts := resources.Get "js/index.js" | fingerprint }}
+<script type="text/javascript" src="{{ $scripts.Permalink | relURL }}"></script>

@@ -1,0 +1,20 @@
+baseURL = "https://www.getdnote.com"
+title = "Dnote"
+theme = "basic"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+    style = "github-dark"
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

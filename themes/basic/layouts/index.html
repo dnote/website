@@ -1,0 +1,155 @@
+{{ define "main" }}
+  <div id="T-site-home" class="home">
+    {{ partial "main-hero.html" . }}
+
+    <section id="feature-section" class="section section-center">
+      <div class="container">
+        <img src="/img/dnote-cli.png" alt="A demonstration of command line interface listing and adding notes" class="demo section-leading-img" />
+
+        <h2 class="section-heading">
+          Capture knowledge without leaving your terminal
+        </h2>
+
+        <p class="section-support">
+          Quickly save commands, snippets, and insights. Find them later with full-text search.
+        </p>
+
+        <div class="feature-container">
+          <ul class="list-unstyled row features">
+            <li class="col-12 col-sm-6 col-lg-4">
+              <div class="cli-feature">
+                <h3 class="cli-feature-heading">
+                  Single binary
+                </h3>
+
+                <p class="cli-feature-desc">
+                  No dependencies, no package managers required. Download and run.
+                </p>
+              </div>
+            </li>
+            <li class="col-12 col-sm-6 col-lg-4">
+              <div class="cli-feature">
+                <h3 class="cli-feature-heading">
+                  Full-text search
+                </h3>
+
+                <p class="cli-feature-desc">
+                  Search through all your notes instantly. Find commands and snippets without scrolling through history.
+                </p>
+              </div>
+            </li>
+            <li class="col-12 col-sm-6 col-lg-4">
+              <div class="cli-feature">
+                <h3 class="cli-feature-heading">
+                  Bring your own editor
+                </h3>
+
+                <p class="cli-feature-desc">
+                  Your favorite text editor will work with Dnote, whether inside a terminal or as a GUI.
+                </p>
+              </div>
+            </li>
+            <li class="col-12 col-sm-6 col-lg-4">
+              <div class="cli-feature">
+                <h3 class="cli-feature-heading">
+                  SQLite format
+                </h3>
+
+
+                <p class="cli-feature-desc">
+                  One file contains everything. Back it up to any storage, query it with standard tools, or migrate it easily.
+                </p>
+              </div>
+            </li>
+            <li class="col-12 col-sm-6 col-lg-4">
+              <div class="cli-feature">
+                <h3 class="cli-feature-heading">
+                  Free and open source
+                </h3>
+
+
+                <p class="cli-feature-desc">
+                  Inspect the code, contribute improvements, or fork it. Built in the open.
+                </p>
+              </div>
+            </li>
+            <li class="col-12 col-sm-6 col-lg-4">
+              <div class="cli-feature">
+                <h3 class="cli-feature-heading">
+                  Cross-platform
+                </h3>
+
+
+                <p class="cli-feature-desc">
+                  Download the binary for macOS, Linux, FreeBSD, or Windows. Install via Homebrew or direct download.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="cloud-section" class="section section-center section-gray">
+      <div class="container">
+        <img src="/img/sync.png" alt="Two terminal windows, one from home and the other from work, synchronizing data between them." class="demo section-leading-img" />
+
+        <h2 class="section-heading">
+          Self-hosted server
+        </h2>
+
+        <p class="section-support">
+          Optionally run your own server to sync across devices. Single binary with SQLite, no database setup required. Deploy with Docker or run it directly.
+        </p>
+
+        <ul class="list-unstyled cloud-features row">
+          <li class="col-12 col-sm-6 col-lg-4 offset-lg-2">
+            <div class="feature">
+              <img src="/img/feature-sync.png" alt="A circle with revolving arrows, representing the synchronization of data" class="feature-img" />
+
+              <h3 class="feature-heading">
+                Multi device sync
+              </h3>
+
+
+              <p class="feature-desc">
+                Sync your data between devices with the server.
+              </p>
+            </div>
+          </li>
+
+          <li class="col-12 col-sm-6 col-lg-4">
+            <div class="feature">
+              <img src="/img/feature-web.png" alt="A diagram representing an API access" class="feature-img" />
+
+              <h3 class="feature-heading">
+                API access
+              </h3>
+
+              <p class="feature-desc">
+                Access your notes via REST API. Build integrations or access from any HTTP client.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="oss-section" class="section section-center">
+      <div class="container">
+        <h2 class="section-heading">
+          Free and open source since 2017
+        </h2>
+
+        <p class="section-support">
+          Dnote will be always free. Your knowledge belongs to you.
+        </p>
+
+
+        <img src="/img/open-source.svg" alt="A diagram of a programmer on a laptop" class="section-img" />
+
+      </div>
+    </section>
+
+  </div>
+{{ end }}

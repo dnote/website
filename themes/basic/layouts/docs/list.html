@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="docs-container">
+  {{ partial "breadcrumbs.html" . }}
+  <div class="docs-content">
+    <article>
+      {{ .Content }}
+
+      {{ if .Pages }}
+      <ul class="docs-sections">
+        {{ range .Pages }}
+        <li class="docs-section-item">
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          {{ if .Description }}
+          <span class="docs-section-description"> - {{ .Description }}</span>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </article>
+  </div>
+</div>
+{{ end }}
