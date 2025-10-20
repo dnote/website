@@ -1,0 +1,89 @@
+@import "./vendor/rem";
+@import "./theme";
+@import "./font";
+@import "./variables";
+
+.news-container {
+  max-width: rem($content-max-width);
+  margin: 0 auto;
+  padding: rem(32px) rem(16px);
+}
+
+.news-list {
+  margin: 0;
+  padding-left: rem(20px);
+}
+
+.news-item {
+  time {
+    color: $gray;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: $third;
+    text-decoration: underline;
+    }
+  }
+}
+
+.pagination {
+  margin-top: rem(32px);
+
+  span {
+    display: block;
+    color: $gray;
+    margin-bottom: rem(8px);
+  }
+
+  .pagination-links {
+    display: flex;
+    flex-direction: column;
+    gap: rem(4px);
+
+    a {
+      color: $third;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.news-container article {
+  header {
+    margin-bottom: rem(32px);
+
+    h1 {
+      margin: 0 0 rem(12px) 0;
+    }
+
+    time {
+      display: block;
+      @include font-size('small');
+      color: $gray;
+    }
+  }
+
+  footer {
+    margin-top: rem(48px);
+    padding-top: rem(24px);
+    border-top: 1px solid $second;
+
+    a {
+      color: $third;
+      text-decoration: none;
+      @include font-size('small');
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

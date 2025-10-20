@@ -1,4 +1,6 @@
 <h{{ .Level }} id="{{ .Anchor }}">
   {{ .Text | safeHTML }}
+  {{ if eq .Page.Section "docs" }}
   <a class="heading-anchor" href="#{{ .Anchor }}" aria-label="Link to {{ .Text }}">#</a>
+  {{ end }}
 </h{{ .Level }}>

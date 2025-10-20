@@ -2,11 +2,12 @@
 @import "./theme";
 @import "./font";
 @import "./responsive";
+@import "./variables";
 
 $header-offset: rem(74px);
 
 .docs-container {
-  max-width: rem(1280px);
+  max-width: rem($content-max-width);
   margin: 0 auto;
   padding: rem(32px) rem(16px);
 }
@@ -109,53 +110,6 @@ $header-offset: rem(74px);
     p {
       // margin-bottom: rem(16px);
       // line-height: 1.7;
-    }
-
-    ul, ol {
-      margin-bottom: rem(16px);
-      padding-left: rem(32px);
-
-      li {
-        // margin-bottom: rem(8px);
-        // line-height: 1.7;
-      }
-    }
-
-    // Code blocks
-    .highlight {
-      border: 1px solid #e5e7eb;
-      // margin-top: rem(24px);
-      margin-bottom: rem(12px);
-      border-radius: 0;
-
-      pre {
-        margin: 0;
-        padding: rem(12px);
-        overflow-x: auto;
-        border-radius: 0;
-
-        code {
-          margin: 0;
-          padding: 0;
-          line-height: 1.5;
-          @include font-size('small');
-        }
-      }
-    }
-
-    // Inline code styling
-    :not(pre) > code {
-      padding: rem(2px) rem(6px);
-      background-color: $lighter-gray;
-      color: $black;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 0.9em;
-      border-radius: rem(3px);
-
-      &::before,
-      &::after {
-        content: none; // Remove any auto-generated content
-      }
     }
 
     a {

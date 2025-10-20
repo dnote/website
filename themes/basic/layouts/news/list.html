@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="news-container">
+  {{ partial "breadcrumbs.html" . }}
+
+  {{ $paginator := .Paginate .Pages 10 }}
+  <ul class="news-list">
+    {{ range $paginator.Pages }}
+    <li class="news-item">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">({{ .Date.Format "Jan 2, 2006" }})</time> <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+
+  {{ if gt $paginator.TotalPages 1 }}
+  <div class="pagination">
+    <span>Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+    <div class="pagination-links">
+      {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}">Prev</a>
+      {{ end }}
+      {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}">Next</a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
