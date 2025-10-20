@@ -11,6 +11,14 @@
         <ul class="menu-list">
           <li class="menu-item">
             <a
+              href="/news"
+              class="menu-item-content menu-item-link{{ if eq .Page.Section "news" }} active{{end}}"
+            >
+              News
+            </a>
+          </li>
+          <li class="menu-item">
+            <a
               href="/docs"
               class="menu-item-content menu-item-link{{ if eq .Page.Section "docs" }} active{{end}}"
             >

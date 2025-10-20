@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="news-container">
+  {{ partial "breadcrumbs.html" . }}
+
+  <article>
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+
+    {{ .Content }}
+
+    <footer>
+      <a href="/news/">← Back to News</a>
+    </footer>
+  </article>
+</div>
+{{ end }}
