@@ -37,7 +37,7 @@ services:
   dnote:
     ...
     environment:
-      - WebURL=https://dnote.example.com
+      - BaseURL=https://dnote.example.com
       - PORT=3001
       - DisableRegistration=false
 ```

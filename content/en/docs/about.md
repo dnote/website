@@ -13,3 +13,7 @@ This project uses the following principles to make decisions.
 - **Long-term:** Knowledge lasts forever. This project should too.
 - **Simple:** New features add complexity. We avoid complexity even if it means less convenience.
 - **Open:** Your knowledge belongs to you. All data stays accessible and transparent.
+
+## License
+
+Dnote is free and open source software licensed under Apache License 2.0.

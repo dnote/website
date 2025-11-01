@@ -13,8 +13,7 @@ Each option can be set via flag or environment variable:
 - `--dbPath` / `DBPath` - Database file path. Default: `$XDG_DATA_HOME/dnote/server.db`
 - `--disableRegistration` / `DisableRegistration` - Disable user registration. Default: `false`
 - `--logLevel` / `LOG_LEVEL` - Log level (`debug`, `info`, `warn`, `error`). Default: `info`
-- `--appEnv` / `APP_ENV` - Application environment (`PRODUCTION` or `DEVELOPMENT`). Default: `PRODUCTION`
-- `--webUrl` / `WebURL` - Full server URL (no trailing slash). Default: `http://localhost:3001`
+- `--baseUrl` / `BaseURL` - Full server URL (no trailing slash). Default: `http://localhost:3001`
 
 ## Examples
 
