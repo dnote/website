@@ -165,7 +165,7 @@ dnote find "merge sort" -b algorithms
 
 ### Sync
 
-Sync your local notes with a Dnote server (encrypted end-to-end).
+Sync your local notes with a Dnote server.
 
 **Alias:** `s`
 
